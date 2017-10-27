@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Calculadora - JavaScript</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/Menustyle.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/calculadora.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+<body>
+<!--MENU-->
+<div id="navigation" class="navigation">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfólio</a></li>
+        <li><a href="curriculo.html">Currículo</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li id="threeline" class="threeline" onclick="openNav()"><img src="img/menu.png" height="40" width="40">
+        </li>
+    </ul>
+</div>
+
+
+<div class="principal">
+    <div class="fundoCurriculo">
+
+        <ul class="caminho">
+            <li><a href="index.html">Home</li>
+            <li>></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li>></li>
+            <li><a href ="habilidade2.html">Javascript</a></li>
+            <li>></li>
+            <li>Calculadora</li>
+        </ul>
+
+        <h1>Javascript</h1>
+
+        <p>Projeto simples que realiza operações matemáticas básicas</p>
+
+        <h2>CALCULADORA</h2>
+        <hr>
+
+<!--ENTRADA PRIMEIRO VALOR-->
+        <div class="caixaTexto">
+            <input id="num1" type="text" placeholder="Digite um número">
+        </div>
+<!--Seleção do operador aritmético-->
+        <div>
+            <select id="operacao">
+                <option value="">Selecione uma operação</option>
+                   <option value= "1">Subtração</option>
+                       <option value= "2">Adição</option>
+                   <option value = "3">Multiplicação</option>
+                <option value = "4">Divisão</option>
+            </select>
+        </div>
+
+<!--ENTRADA DO SEGUNDO VALOR-->
+        <div>
+            <input id="num2" type="text" placeholder="Digite um número">
+        </div>
+
+ <!--BOTÃO CALCULAR-->
+        <div>
+            <button type="button" onclick="calcular()">Calcular</button>
+        </div>
+
+ <!--RESULTADO-->
+        <div>
+            <input id ="resultado" type="text" placeholder="Resultado"readonly>
+        </div>
+
+        <hr>
+        <br>
+        <br>
+
+     </div>
+    <a class="link-voltar"href="habilidade2.html">&larr;Voltar<a>
+</div>
+
+
+
+</body>
+
+</html>

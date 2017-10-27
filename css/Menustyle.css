@@ -1,0 +1,43 @@
+
+
+.navigation{
+    height: 30px; /*tamanho da "barra" do menu*/
+}
+
+.navigation ul {
+    margin: 0px; /*reset de margem padrão da lista */
+    list-style: none; /* remover marcadores da lista */
+    padding-left: 0;
+    text-align: center; /* Alinhamento da lista */
+    height: 30px; /* tamanho da lista (deve ser do tamanho da barra do menu */
+    text-shadow: 1px 1px 1px #111;
+   
+
+}
+.navigation li{
+    display: inline-block; /* lista na mesma linha */
+    padding-left: 30px; /* Espaçar itens da lista */
+    padding-right: 30px ; /* Espaçar itens da lista */
+    line-height: 30px; /*Alinhamento dos itens do menu */
+    font-size: 18px;
+    
+    animation-name: menu-animation;
+    animation-duration: 1s;
+}
+
+.navigation a:hover{
+    text-decoration: none; /*remove sublinhado dos links */
+    color: red;
+}
+
+.navigation a{
+    text-decoration: none; /*remove sublinhado dos links */
+    color: WHITE; /*cor da fonte da lista */}
+
+.navigation li.threeline{
+    display: none;
+}
+
+.navigation li.threeline:hover{
+    cursor: pointer;
+}
