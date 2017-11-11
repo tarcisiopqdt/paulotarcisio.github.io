@@ -3,15 +3,17 @@
         margin: 0;
         padding: 0; /* Reset de margem, padding e font*/
          /* Importante para nao mostrar divisão das divs na mesma linha */
-        background-image:url("../img/background.jpg");/* cor/imagem do fundo de todas as páginas */
+        background-image: url("../img/background.jpg");/* cor/imagem do fundo de todas as páginas */
         background-repeat: no-repeat;
         background-size: cover;
-        background-attachment: fixed ;
-        font-family: 'Cinzel', cursive;
+        background-attachment: fixed;
+        background-position: center;
+        min-height: 640px;
+        font-family: 'Cinzel', Arial;
         color: white;
         
     }
-    
+
 .caminho li{
     list-style: none;
     display: inline-block;
@@ -20,19 +22,27 @@
 .caminho a{
     color: WHITE;
 }
-.link-voltar{
-    color: white;
+
+/*Rodapé*/
+footer p {
+    color: darkred;
+    text-align: center;
+    font-size: 16px;
+}
+.rodape{
+    background-color: black;
 }
 
-
+/*Botões*/
+.botao{
+    text-align: center;
+}
 
 /* FIM DAS CONFIGURAÇÕES GERAIS DO SITE*/
 
 
 /* INICIO FORMATAÇÃO DA PÁGINA INDEX  */
-    .home {
-        color:White; /*Cor da fonte de tudo que esta na div class="home" */
-    }
+
     .home span{
         color: red;/* cor do "TARCISIO" */
         text-shadow: 2px 2px 2px #111;
@@ -61,8 +71,6 @@
 
         vertical-align: top; /* div alinhado no topo*/
         width: 59%; /* porcentagem do tamanho da largura do div em relação ao tamanho da tela*/
-    
-
         animation-name: titulo-animation;
         animation-duration: 2s;
     }
@@ -76,57 +84,28 @@
 
     .meu-perfil h2 {
         font-size: 23px;
-        margin-top: -50px; /* aproximar h2 do h1*/
+        margin-top: 20px; /* aproximar h2 do h1*/
         font-weight: 600; /* Largura da fonte*/
         text-shadow: 1px 1px 1px #111;
     }
 
+#recentes{
+    
+    background: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+}
+
+#recentes p{
+    font-family: 'Lora', serif;
+    font-size: 18px;
+
+}
+
+.albuns{
+    padding: 10px 0px 10px 0px;
+}
 
 /* FIM FORMATAÇÃO DA PÁGINA INDEX */
-
-/* INÍCIO FORMATAÇÃO DAS PÁGINA "CURRICULO E CONTATO" */
-.principal{
-    padding: 80px 180px 80px 180px;
-    animation-name: principal-animation;
-    animation-duration: 2s;
-}
-.fundoCurriculo{
-    background-color: rgba(8, 8, 8, 0.8);
-    padding: 10px;
-
-    
-}
-.cv-foto{
-    float: left;
-    width: 280px;
-    margin-right: 50px;
-    margin-bottom: 20px;
-    box-shadow: 3px 3px 3px rgba(0,0,0,.4);
-}
-.principal h3 {
-    font-size: 18px;
-    
-   }
-.principal h2 {
-    margin-top: 25px;
-    font-size: 20px;
-    font-weight: bolder;
-    color: red;
-    text-align: center;
-    
-    text-shadow: 1px 1px 1px #111;
-}
-.boasvindas {
-    text-align: center;
-        color: red;/* cor das boas vindas */
-}
-.principal p{
-    font-size: 18px;
-    line-height: 24px;
-   font-family: 'Lora', serif;
-   
-}
-/* FIM FORMATAÇÃO DAS PÁGINAS "CURRICULO  E CONTATO" */
 
 
 /*INÍCIO FORMATAÇÃO DA PÁGINA PORTFÓLIO*/
@@ -188,14 +167,53 @@
 /*FIM FORMATAÇÃO DA PÁGINA PORTFÓLIO*/
 
 
-/* INÍCIO FORMATAÇÃO DA PÁGINA "Links Redes Sociais" */
+/* INÍCIO FORMATAÇÃO DAS PÁGINA "CURRICULO E CONTATO" */
+.principal{
+    padding: 80px 180px 80px 180px;
+    animation-name: principal-animation;
+    animation-duration: 2s;
+}
+.fundoCurriculo{
+    background-color: rgba(8, 8, 8, 0.8);
+    padding: 10px;
+}
+.cv-foto{
+    float: left;
+    width: 280px;
+    margin-right: 50px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    box-shadow: 3px 3px 3px rgba(0,0,0,.4);
+}
+.principal h3 {
+    font-size: 18px;
+    
+   }
+.principal h2 {
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: red;
+    text-align: center;
+    
+    text-shadow: 1px 1px 1px #111;
+}
+.boasvindas {
+    text-align: center;
+        color: red;/* cor das boas vindas */
+}
+.principal p{
+    font-size: 18px;
+    line-height: 24px;
+   font-family: 'Lora', serif;
+   
+}
+
 .social-img{
     width: 60px;
     margin-right: 15px;
 }
-/* FIM FORMATAÇÃO DA PÁGINA "Links Redes Sociais" */
-
-
+/* FIM FORMATAÇÃO DAS PÁGINAS "CURRICULO  E CONTATO" */
 
 
 
@@ -222,23 +240,10 @@
 
 
 
-
-
-@media (max-width:820px){
-
- /* RESPONSIVIDADE DO MENU*/
-    .navigation li {
-        display: none;
-    }
-    .navigation li.threeline{
-        display: block;
-        text-align: center;
-    }
-/*fim menu*/
-
-
+@media (max-width:1000px){
 
 /*pagina home*/
+
     .home div{
         display: block; /*tudo que for div fica na mesma linha */
         height: auto; /* tamanho de cada div */
@@ -246,7 +251,7 @@
     }
 
     .foto-perfil img {
-        margin-top: 20px;
+        margin-top: 40px;
         max-width:60%;
     }
     
@@ -269,8 +274,17 @@
         margin-top: 10px;
         margin-left: 20px;
         margin-right: 20px;
+        margin-bottom: 50px;
         font-size: 16px;
     }
+
+    #recentes{
+        margin-top: 150px;
+    }
+    .albuns img{
+        padding-bottom: 20px ;
+    }
+
     /*fim pagina home*/
 
     /*página curriculo, contato e portfolio (exceto imagens) */
@@ -287,7 +301,8 @@
     .cv-foto{
         float: none;
          max-width:100%;
-        margin-right: 0px;
+         margin-left: 3px;
+        margin-right: 7px;
         margin-bottom: 20px;
         box-shadow: 3px 3px 3px rgba(0,0,0,.4);
     }
@@ -300,6 +315,14 @@
     }
     .social-img{
         margin-right: 0;
+    }
+    #skills {
+        font-size: 30px;
+        text-align: center;
+    }
+    #jobs{
+        font-size: 30px;
+        text-align: center;
     }
   
 /* FIM FORMATAÇÃO DAS PÁGINAS "CURRICULO  E CONTATO" */
@@ -317,21 +340,4 @@
         opacity: 0.8;
     }
 
-
 /*fim pagina portfolio*/
-
-    .menujs{  
-        height: auto;   
-    }
-    .menujs ul{
-        height: auto;
-        padding-right: 15%;
-        padding-left: 15%;
-    }
-    .menujs ul li{
-        display: block;
-        border-bottom: solid gray 1px;
-        width: 100%;
-        padding: 0;
-    }
-}
