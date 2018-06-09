@@ -1,25 +1,19 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
     <title>Calculadora - JavaScript</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/Menustyle.css">
-
     <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
     <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/calculadora.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Menustyle.css">
+    
     <!-- Bootstrap -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" >
     <link rel="stylesheet" href="css/styles.css">
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+       
 </head>
-
-
 <body>
 <!--NOVO MENU-->
 <nav class="nav navbar-inverse navbar-transparente">
@@ -54,7 +48,8 @@
         </div><!--FIM CORPO DO MENU-->
 
     </div>  <!--FIM CONTAINER-->
-</nav><!--FIM NOVO MENU-->
+</nav>
+<!--FIM NOVO MENU-->
 
 <div class="principal">
     <div class="fundoCurriculo">
@@ -75,45 +70,44 @@
 
         <h2>CALCULADORA</h2>
         <hr>
+        
+			<div class="row">
+				<div class="col-md-4">
+					<input id="num1" type="text" class="form-control inputFontStyle" placeholder="Digite um número" />
+				</div>
 
-<!--ENTRADA PRIMEIRO VALOR-->
-        <div class="caixaTexto">
-            <input id="num1" type="text" placeholder="Digite um número">
-        </div>
-<!--Seleção do operador aritmético-->
-        <div>
-            <select id="operacao">
-                <option value="">Selecione uma operação</option>
-                   <option value= "1">Subtração</option>
-                       <option value= "2">Adição</option>
-                   <option value = "3">Multiplicação</option>
-                <option value = "4">Divisão</option>
-            </select>
-        </div>
+				<div class="col-md-4">
+					<select id="operacao" class="form-control inputFontStyle">
+						<option value="">--Selecione uma operação</option>
+						<option value="1">Subtração</option>
+						<option value="2">Adição</option>
+						<option value="3">Multiplicação</option>
+						<option value="4">Divisão</option>
+					</select>
+				</div>
 
-<!--ENTRADA DO SEGUNDO VALOR-->
-        <div>
-            <input id="num2" type="text" placeholder="Digite um número">
-        </div>
+				<div class="col-md-4">
+					<input id="num2" type="text" class="form-control inputFontStyle" placeholder="Digite um número"/>
+				</div>
+			</div>
+            <br/>
+			<div class="row">
+				<div class="col-md-4"></div>
 
- <!--BOTÃO CALCULAR-->
-        <div>
-            <button type="button" onclick="calcular()">Calcular</button>
-        </div>
+				<div class="col-md-4"></div>
 
- <!--RESULTADO-->
-        <div>
-            <input id ="resultado" type="text" placeholder="Resultado"readonly>
+				<div class="col-md-12">
+					<button type="button" class="btn btn-lg btn-primary" onclick="calcular()">Calcular</button>
+				</div>
+			</div>
+<br/>
+			<div class="well inputFontStyle">
+				Resultado: <input id="resultado" type="text" class="form-control" readonly/>
+			</div>
         </div>
-
-        <hr>
         <br>
-        <br>
-
-     </div>
-    <br>
-
         <a class="btn btn-danger"href="habilidade2.html">Voltar</a>
+     </div>
 
 </div>
 
@@ -124,7 +118,6 @@
                 <br>
                 <p><strong>Copyright &copy; 2017 by Paulo Tarcisio</strong></p>
             </div>
-
         </div>
     </div>
 </footer>
@@ -135,5 +128,4 @@
 <script src="bootstrap/js/bootstrap.min.js"></script>
 
 </body>
-
 </html>
