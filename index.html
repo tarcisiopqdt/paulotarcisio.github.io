@@ -1,99 +1,78 @@
 <!DOCTYPE html>
-
 <html>
 
-	<head>
-		<title>Paulo Tarcisio - Início</title>
-		<meta charset="utf-8">
-        <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
-        <script type="text/javascript" src="js/script.js"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <!-- Estilo -->
-        <link rel="stylesheet" href="css/Menustyle.css">
-        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" >
-        <link rel="stylesheet" href="css/styles.css">
-
-        <!--[if lt IE 9]>
+<head>
+    <title>Paulo Tarcisio - Início</title>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+    <script type="text/javascript" src="js/script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Menustyle.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
+</head>
 
-
-    </head>
-
-
-	<body>
-    <!--NOVO MENU-->
-            <nav class="nav navbar-inverse navbar-transparente">
-                <div class="container">
-
-                    <!--HEADER DO MENU-->
-                    <div class="navbar-header" id="navigation">
-                        <button type="button" class="navbar-toggle collapsed"
-                                data-toggle="collapse" data-target="#barra-navegacao">
-                            <span class="sr-only">Alternar Menu</span>
-                            <span><img src="img/menu.png" height="20" width="20"></span>
-                        </button>
-                        <a href="index.html" class="navbar-brand" id="img-logo">Paulo Tarcisio</a>
-                    </div> <!--FIM HEADER-->
-
-                    <!--FIM CORPO DO MENU-->
-                    <div class="collapse navbar-collapse" id="barra-navegacao">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a href="index.html">Home</a></li>
-                            <li class="dropdown">
-                                <a href="portfolio.html" class="dropdown-toggle" data-toggle="dropdown">
-                                    Portfólio <span class="caret"></span>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="portfolio.html">Trabalhos Recentes</a></li>
-                                    <li><a href="portfolio.html">Habilidades</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="curriculo.html">Currículo</a></li>
-                            <li><a href="contato.html">Contato</a></li>
-                        </ul>
-                    </div><!--FIM CORPO DO MENU-->
-
-                </div>  <!--FIM CONTAINER-->
-            </nav><!--FIM NOVO MENU-->
-
-        
-        <!--Conteúdo Principal-->
-            <div class="home">
-                <div class="foto-perfil">
-                    <img src="img/perfil.jpg">
+<body>
+    <header>
+        <nav class="nav navbar-inverse navbar-transparente">
+            <div class="container">
+                <div class="navbar-header" id="navigation">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barra-navegacao">
+                        <span class="sr-only">Alternar Menu</span>
+                        <span><img src="img/menu.png" height="20" width="20"></span>
+                    </button>
+                    <a href="index.html" class="navbar-brand" id="img-logo">Paulo Tarcisio</a>
                 </div>
+                <!--FIM CORPO DO MENU-->
+                <div class="collapse navbar-collapse" id="barra-navegacao">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html">Portfólio</a></li>
+                        <li><a href="curriculo.html">Currículo</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <!--FIM CORPO DO MENU-->
 
-                  <div class="meu-perfil">
-				    <h1>PAULO<span> TARCISIO</span></h1>
-                       <h2>Acadêmico de Análise e Desenvolvimento de Sistemas</h2>
-                  </div>
+            </div>
+            <!--FIM CONTAINER-->
+        </nav>
+    </header>
+    <!--Conteúdo Principal-->
+    <main>
+        <div class="home">
+            <div class="foto-perfil">
+                <img src="img/perfil.jpg">
+            </div>
+
+            <div class="meu-perfil">
+                <h1>PAULO<span> TARCISIO</span></h1>
+                <h2>Desenvolvedor Web FullStack</h2>
+                <h2>Acadêmico de Análise e Desenvolvimento de Sistemas</h2>
+            </div>
 
 
-            </div> <!-- Fim Conteúdo Principal-->
-
+        </div> <!-- Fim Conteúdo Principal-->
+    </main>
     <!--Atividades Recentes-->
     <section id="recentes">
         <div class="container">
             <div class="row">
-
                 <!--infos-->
                 <div class="col-md-6">
                     <h2> O que tenho feito recentemente? </h2>
+                    <h3>Estudando novas Tecnologias</h3>
+                    <p>Atualmente estou estudando React, JavaScript e UI Design.</p>
 
-                    <h3>Explorando novas Tecnologias</h3>
-                    <p>Atualmente estou em uma maratona intensa de estudos para desenvolvimento de sistemas com Java, tanto pra Desktop e Mobile</p>
-
-                    <a href="portfolio.html"><h3>Side Projects</h3></a>
-                    <p>Side Projects são projetos completos de software, que teoricamente não tenho a obrigação de criar. Desenvolvo por
-                        hobby mesmo.</p>
-
-                    <a href="portfolio.html"><h3> Web Sites Clones</h3></a>
-                    <p>Os Web-Sites clones codificados por mim, são cópias idênticas as originais (ou quase), sem interesse comercial, foram feitas apenas
-                        como forma de tangibilizar meus conhecimentos.</p>
-
+                    <a href="portfolio.html">
+                        <h3>Projetos Pessoais</h3>
+                    </a>
+                    <p>Tenho trabalhado ultimamente em projetos pessoais como WebSites,
+                        Sistemas Web com várias tecnlogias dentre elas PHP, NodeJS, React, Java...</p>
                 </div>
 
                 <!--albuns-->
@@ -101,39 +80,46 @@
                 <div class="col-md-6">
                     <div class="row albuns">
                         <div class="col-md-6 ">
-                            <img src="img/img1.jpg" class="img-responsive">
+                            <a href="react.html">
+                                <img src="img/img1.png" class="img-responsive">
+                            </a>
                         </div>
                         <div class="col-md-6">
-                            <img src="img/img2.png"  class="img-responsive">
+                            <a href="habilidade1.html">
+                                <img src="img/img2.png" class="img-responsive">
+                            </a>
                         </div>
-                    </div> <!--fim row 1-->
+                    </div>
+                    <!--fim row 1-->
 
 
                     <!--row 2-->
-                    <div class="row albuns" >
+                    <div class="row albuns">
                         <div class="col-md-6">
-                            <img src="img/img3.jpg" class="img-responsive">
+                            <a href="#">
+                                <img src="img/img3.png" class="img-responsive">
+                            </a>
                         </div>
 
                         <div class="col-md-6">
-                            <img src="img/img4.jpg"  class="img-responsive">
+                            <a href="php.html">
+                                <img src="img/img4.png" class="img-responsive">
+                            </a>
                         </div>
                     </div>
-                </div><!--fim row 2-->
+                </div>
+                <!--fim row 2-->
 
-            </div> <!--Fim ROW-->
+            </div>
+            <!--Fim ROW-->
         </div>
     </section>
-    <br>
 
     <div class="botao">
-        <a href="#navigation" class="btn btn-danger" >
+        <a href="#navigation" class="btn btn-danger">
             Voltar ao topo
         </a>
     </div>
-
-    <br>
-    <br>
 
     <footer>
         <div>
@@ -147,10 +133,10 @@
         </div>
     </footer>
 
-            <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-            <!-- Include all compiled plugins (below), or include individual files as needed -->
-            <script src="bootstrap/js/bootstrap.min.js"></script>
-    </body>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
 
 </html>

@@ -1,9 +1,11 @@
 /* INÍCIO DAS CONFIGURAÇÕES GERAIS DO SITE*/
-    html, body {
+    html,body, ul,li, h1,h2,h3,p{
         margin: 0;
-        padding: 0; /* Reset de margem, padding e font*/
+        padding: 0;
+    }
+    html, body {
          /* Importante para nao mostrar divisão das divs na mesma linha */
-        background-image: url("../img/background.jpg");/* cor/imagem do fundo de todas as páginas */
+        background-image: url("../img/background2.jpg");/* cor/imagem do fundo de todas as páginas */
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
@@ -36,13 +38,19 @@ footer p {
 /*Botões*/
 .botao{
     text-align: center;
+    margin: 20px 0;
 }
 
 /* FIM DAS CONFIGURAÇÕES GERAIS DO SITE*/
 
 
 /* INICIO FORMATAÇÃO DA PÁGINA INDEX  */
-
+    .flex-container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
     .home span{
         color: red;/* cor do "TARCISIO" */
         text-shadow: 2px 2px 2px #111;
@@ -57,15 +65,14 @@ footer p {
         border-radius: 350px;
         margin-top: 100px;
         border: 2px solid;
-        box-shadow: 3px 3px 3px rgba(0,0,0,.4);       
+        box-shadow: 3px 3px 3px rgba(0,0,0,.4); 
+       
     }
     .foto-perfil{
-
         width: 40%; /* porcentagem do tamanho da largura do div em relação ao tamanho da tela*/
         text-align: center; /* centralizar imagem do perfil*/
         animation-name: perfil-animation;
         animation-duration: 1s;
-
     }
     .meu-perfil {
 
@@ -100,6 +107,12 @@ footer p {
     font-size: 18px;
 
 }
+#recentes h3{
+    color: red;
+}
+#recentes a:hover{
+    color: red;
+}
 
 .albuns{
     padding: 10px 0px 10px 0px;
@@ -109,17 +122,26 @@ footer p {
 
 
 /*INÍCIO FORMATAÇÃO DA PÁGINA PORTFÓLIO*/
+#jobs{
+    margin: 20px;
+}
+
+#skills{
+    margin: 20px;
+}
+
 .miniatura {
     width: 300px;
     height: 300px;
     background-repeat: no-repeat;
     background-size: contain;
     display: inline-block;
-    margin-bottom: 15px;
+    margin-top: 10px;
     margin-right: 15px;
     overflow: hidden;
-    border: 2px outset #9B9999;
-    box-shadow: 2px 2px 2px rgba(0,0,0,.4);
+    border: 1px solid;
+    border-radius: 5px;
+    box-shadow: 0 0 4px 1px rgba(172, 170, 170, 0.3);
 }
 .miniatura a{
     text-decoration: none;
@@ -155,13 +177,14 @@ footer p {
     text-transform: none;
  }
  .trabalhos-pics{
-    width: 90%;
-    margin: 5%;
+    max-width: 100%;
     margin-bottom: 10px;
     margin-top: 10px;
     border: 1px outset #9B9999;
-    box-shadow: 2px 2px 2px rgba(0,0,0,.4);    
+    box-shadow: 2px 2px 2px rgba(0,0,0,.4);
+    display: block;
 }
+
 
  .links-trabalhos {
      color: white;
@@ -181,9 +204,14 @@ footer p {
     animation-name: principal-animation;
     animation-duration: 2s;
 }
+
 .fundoCurriculo{
-    background-color: rgba(8, 8, 8, 0.8);
-    padding: 10px;
+    background-color: rgba(8, 8, 8, 0.9);
+    padding: 40px;
+    border-radius: 5px;
+}
+.fundoCurriculo h1{
+    margin: 20px;
 }
 .cv-foto{
     float: left;
@@ -197,19 +225,24 @@ footer p {
     font-size: 18px;
     
    }
+.margin-bottom{
+    margin-bottom: 10px;
+}
+.curriculo h3{
+    margin:0 0 10px 0;
+}
 
-#AlinharTexto{
-    text-align: center;
+.resumo{
+    max-width: 60%;
+    margin: 0 auto;
 }
 .principal h2 {
-    margin-top: 25px;
-    font-size: 20px;
-    font-weight: bolder;
+    margin: 10px;
+    font-size: 24px;
     color: red;
     text-align: center;
-    
-    text-shadow: 1px 1px 1px #111;
-}
+   }
+
 .boasvindas {
     text-align: center;
         color: red;/* cor das boas vindas */
@@ -252,7 +285,7 @@ footer p {
 
 
 
-@media (max-width:1000px){
+@media (max-width:1024px){
 
 /*pagina home*/
 
@@ -303,6 +336,9 @@ footer p {
     .principal{
         padding: 10px 5% 40px 5%;
     }
+    .fundoCurriculo{
+        padding: 10px;
+    }
     .principal p{
         text-align: center;
         line-height: 30px;
@@ -331,10 +367,13 @@ footer p {
     #skills {
         font-size: 30px;
         text-align: center;
+        margin: 10px;
     }
+    
     #jobs{
         font-size: 30px;
         text-align: center;
+        margin: 10px;
     }
   
 /* FIM FORMATAÇÃO DAS PÁGINAS "CURRICULO  E CONTATO" */
